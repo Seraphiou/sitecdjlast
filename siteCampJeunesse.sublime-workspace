@@ -4,6 +4,106 @@
 		"selected_items":
 		[
 			[
+				"rez",
+				"resize"
+			],
+			[
+				"mi",
+				"miw	min-width"
+			],
+			[
+				"bgzc",
+				"bgz:ct	background-size:contain"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"inp",
+				"date-input"
+			],
+			[
+				"soci",
+				"social-logo"
+			],
+			[
+				"con",
+				"contact"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"po",
+				"pos:r	position:relative"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"li",
+				"lis:n	list-style:none"
+			],
+			[
+				"mobil",
+				"mobileNav"
+			],
+			[
+				"ng-s",
+				"ng-show	AngularJS"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"text",
+				"text-input"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"$lo",
+				"$locationProvider	AngularJS"
+			],
+			[
+				"tr",
+				"transition-duration"
+			],
+			[
+				"he",
+				"header"
+			],
+			[
+				"hea",
+				"header-nav"
+			],
+			[
+				"$sc",
+				"$scope	AngularJS"
+			],
+			[
+				"rn",
+				"rn-carousel-controls"
+			],
+			[
+				"s",
+				"script	Tag"
+			],
+			[
+				"ta",
+				"ta:l	text-align:left"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
 				"br",
 				"bdrz	border-radius"
 			],
@@ -14,10 +114,6 @@
 			[
 				"dib",
 				"d:ib	display:inline-block"
-			],
-			[
-				"he",
-				"header"
 			],
 			[
 				"pad",
@@ -56,69 +152,57 @@
 	"buffers":
 	[
 		{
-			"file": "app/styles/main.scss",
+			"contents": "cdjicc2016",
 			"settings":
 			{
-				"buffer_size": 1162,
-				"line_ending": "Unix"
+				"buffer_size": 10,
+				"line_ending": "Windows",
+				"name": "cdjicc2016"
 			}
 		},
 		{
 			"file": "app/views/main.html",
 			"settings":
 			{
-				"buffer_size": 2365,
+				"buffer_size": 7483,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/index.html",
+			"file": "app/styles/main.scss",
 			"settings":
 			{
-				"buffer_size": 4480,
+				"buffer_size": 9506,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/images/logo.png",
+			"file": "app/scripts/controllers/main.js",
 			"settings":
 			{
-				"buffer_size": 6030,
+				"buffer_size": 2475,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/C/Users/Seraphin/Mes sites/Le-site-du-camp-de-jeunes/.gitignore",
+			"file": "app/inscription.php",
 			"settings":
 			{
-				"buffer_size": 51,
-				"line_ending": "Windows",
-				"name": "node_modules"
-			}
-		},
-		{
-			"file": ".editorconfig",
-			"settings":
-			{
-				"buffer_size": 415,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": ".bowerrc",
-			"settings":
-			{
-				"buffer_size": 38,
-				"line_ending": "Unix"
+				"buffer_size": 1229,
+				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 219.0,
+		"height": 127.0,
 		"selected_items":
 		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
 			[
 				"Package Control: I",
 				"Package Control: Install Package"
@@ -126,13 +210,9 @@
 			[
 				"Package Control: ins",
 				"Package Control: Install Package"
-			],
-			[
-				"Package Control: in",
-				"Package Control: Install Package"
 			]
 		],
-		"width": 400.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -149,18 +229,72 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/config.php",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-1/config.php",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/dist/config.php",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/Gruntfile.js",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-1/access.log.43.6",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/styles/main.scss",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/views/main.html",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/index.html",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/scripts/controllers/main.js",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/scripts/app.js",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/views/about.html",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/inscription.php",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/views/main.html",
+		"/C/Users/Seraphin/Downloads/Src_Code/main.cpp",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/index.html",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/engine1/wowslider.js",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/engine1/script.js",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/engine1/jquery.js",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/engine1/wowslider.mod.js",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/wowslider-iframe.html",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/wowslider.html",
+		"/C/Users/Seraphin/Desktop/pour sandrine",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/bower.json",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/scripts/controllers/header.js",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/.tmp/styles/main.css",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/dist/views/main.html",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/styles/main.scss",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/dist/main.html",
+		"/C/Users/Seraphin/Desktop/access.log.18.7",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/bower_components/angular-carousel/dist/angular-carousel.css",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-3/config.php",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-3/storeCovoiturage.php",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/bower_components/angular-carousel/index.html",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/bower_components/angular-carousel/src/directives/rn-carousel.js",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/bower_components/angular-carousel/src/directives/rn-carousel-indicators.js",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/bower_components/angular-carousel/src/directives/rn-carousel-prev.js",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/bower_components/angular-carousel/src/directives/rn-carousel-next.js",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/bower_components/angular-carousel/fullscreen.html",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/scripts/controllers/about.js",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-1/info.php5",
+		"/C/Users/Seraphin/Desktop/.htpasswd",
+		"/C/Users/Seraphin/Desktop/.htaccess",
+		"/C/Users/Seraphin/Desktop/index.html",
+		"/C/Users/Seraphin/Desktop/logs/.htaccess",
+		"/C/Users/Seraphin/Desktop/index.php",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-1/info.pl",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-2/.htaccess 3",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-2/.htaccess 2",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-2/.htaccess",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-1/.htaccess",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/bower_components/angular-timer/dist/angular-timer.min.js",
+		"/C/Users/Seraphin/Downloads/backupdb_28_11_2014.sql",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/package.json",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/.bowerrc",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/.editorconfig",
+		"/C/Users/Seraphin/Mes sites/Le-site-du-camp-de-jeunes/.gitignore",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/images/logo.png",
 		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/.gitattributes",
 		"/C/Users/Seraphin/Mes sites/Le-site-du-camp-de-jeunes/.gitignore.txt",
 		"/C/Users/Seraphin/Desktop/html5-boilerplate-4.3.0/index.html",
 		"/C/Users/Seraphin/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Users/Seraphin/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/views/main.html",
 		"/C/Users/dina/Desktop/Site Camp Jeunesse/yeosite/app/index.html",
 		"/C/Users/dina/Desktop/Site Camp Jeunesse/yeosite/app/views/main.html",
 		"/C/Users/Seraphin/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Users/Seraphin/AppData/Roaming/Sublime Text 2/Packages/User/Package Control.sublime-settings",
-		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/index.html",
-		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/Gruntfile.js"
+		"/C/Users/Seraphin/AppData/Roaming/Sublime Text 2/Packages/User/Package Control.sublime-settings"
 	],
 	"find":
 	{
@@ -171,6 +305,9 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"C:\\Users\\Seraphin\\Mes sites\\Le site du camp de jeunes\\bower_components\\angular-carousel",
+			"C:\\Users\\Seraphin\\Mes sites\\Le site du camp de jeunes\\",
+			"C:\\Users\\Seraphin\\Mes sites\\Le site du camp de jeunes\\bower_components\\angular-carousel\\src\\directives"
 		]
 	},
 	"find_state":
@@ -178,16 +315,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"section class=\"page-section\"",
-			"n id=",
-			"div id",
-			"</div>",
-			"<div>",
-			"</b>\\n        </div>",
-			"<div><b>",
-			"\\n        <div>\\n            <br>\\n        </div>",
-			"\\n\\t\\t",
-			"tab"
+			"cols2",
+			"img",
+			"bg-imag",
+			"bg-imagr",
+			"bg-im",
+			"img.bg-image",
+			"bg-im",
+			"hea",
+			"input(.*)/>",
+			"name=",
+			"',",
+			":'",
+			"('.*):",
+			":.*",
+			"$scope.",
+			";",
+			"');\n",
+			" ",
+			"=.*",
+			"header-con",
+			"blur",
+			"bg-im",
+			"bg-",
+			".nav",
+			"eader ",
+			"eader",
+			"header",
+			":dist",
+			"serve:dist",
+			"serve -dist",
+			"serve dist",
+			"dist",
+			"scroll",
+			"scrol",
+			"scroll",
+			"€",
+			"„",
+			"“",
+			"foot",
+			"body",
+			"page-",
+			"header",
+			"DEE7F7",
+			"animation",
+			"timing",
+			"overf",
+			"rotateMove",
+			"keyframes",
+			"mymove\n",
+			"hover",
+			"der-nav",
+			"nav",
+			"av",
+			"list",
+			"nav",
+			"video-container",
+			"10em",
+			"mymove",
+			"trans",
+			"ng-click",
+			"btn",
+			"#333",
+			"hover",
+			"rn",
+			"video-description",
+			";\n",
+			"col text-input",
+			" type=\"text\"",
+			"styles",
+			"font",
+			"top-logo",
+			"newer",
+			"mysqli_real_escape_string(",
+			");\n",
+			"$request->",
+			"https://www.youtube.com/v/abH-MmKQ2vs",
+			"http://www.youtube.com/v/abH-MmKQ2vs",
+			"https://www.youtube.com/embed/",
+			"anchorSmoothScroll",
+			"$anchorSmoothScroll",
+			"build",
+			"tit",
+			"\"",
+			"http://www.youtube.com/embed/QILiHiTD3uc",
+			"nextSlide",
+			"prevSlide",
+			"prevS",
+			"prevS4",
+			"prevS",
+			"prevN",
+			"prev",
+			"prevne",
+			"swipeEnd",
+			"prev",
+			"next",
+			"rn-carousel-indicators",
+			"rn-carousel-controls",
+			"rn-carousel-con",
+			"rn-carousel-",
+			"nr-carousel-c",
+			"rn-carousel-controls",
+			"rncarouselcontrols",
+			"rn-carousel-controls",
+			"contain",
+			"35729",
+			"serve",
+			"server",
+			"img",
+			"' frameborder='0' allowfullscreen>\\n\\t\\t\\t\\t\\t\\t</iframe>\\n\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t</li>\\n",
+			"\\n\\t\\t\\t\\t\\t<div class='embed-container'>\\n\\t\\t\\t\\t\\t\\t<iframe src='",
+			"</h4>",
+			"<h4>",
+			"<p class=\"video-description\">\\n\\t\\t\\t\\t\\t\\t",
+			"css",
+			"video",
+			"wiredep",
+			"autoprefixer",
+			"553522",
+			"411D09",
+			"1e0000",
+			"2F1100",
+			"836656",
+			"\"",
+			"\"\\n\\t",
+			"\\n\\t",
+			"\\n",
+			"VM315:2 ",
+			"bower"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -195,6 +450,58 @@
 		"regex": false,
 		"replace_history":
 		[
+			"input$1 required/>",
+			",",
+			": ",
+			"$1:$1",
+			":",
+			"",
+			",",
+			";",
+			"",
+			"€\\t",
+			"\\t",
+			"ng-select",
+			"col text-label",
+			" type=\"text\" class=\"text-input\"",
+			"",
+			"mysqli_real_escape_string($request->",
+			"https://www.youtube.com/v/abH-MmKQ2vs?enablejsapi=1&version=3&playerapiid=ytplayer",
+			"https://www.youtube.com/v/abH-MmKQ2vs",
+			"http://www.youtube.com/v/",
+			"'",
+			"https://www.youtube.com/embed/abH-MmKQ2vs",
+			"\"",
+			",url:\"",
+			"\"",
+			"title:\"",
+			"description:\"",
+			"F0ECE6",
+			"FF8C00",
+			"CDC875",
+			"00CE00",
+			"FFF100",
+			"'",
+			"\",\\n\\t",
+			"\\n\\t\"",
+			"\"\\n",
+			"\\n\"",
+			"",
+			"cols2-col",
+			"cols3-col l-cols2",
+			"<input type=\"text\"/>",
+			"<div class=\"cols2-col\"><input type=\"text\"$1/></div>",
+			"<div class=\"cols2-col\">$1</div>",
+			"<div class=\"cols2-col\">$1",
+			"<div class=\"cols2-col l-cols2\">\\n\\t\\t\\t\\t\\t\\t<div class=\"cols2-col\">",
+			"cols2-col",
+			"form-row l-cols2",
+			"/>",
+			":",
+			"",
+			"<div>",
+			"<div>\\n\\t\\t\\t\\t\\t\\t\\t<in",
+			"<div class=\"l-2cols\">\\n\\t\\t\\t\\t\\t\\t<div ",
 			"section",
 			"n class=\"page-section\" id=",
 			"section id",
@@ -212,30 +519,28 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/styles/main.scss",
 					"settings":
 					{
-						"buffer_size": 1162,
+						"buffer_size": 10,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1088,
-								1088
+								10,
+								10
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"auto_name": "cdjicc2016",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -248,153 +553,103 @@
 					"file": "app/views/main.html",
 					"settings":
 					{
-						"buffer_size": 2365,
+						"buffer_size": 7483,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								690,
-								690
+								5901,
+								5917
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1663.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "app/index.html",
+					"file": "app/styles/main.scss",
 					"settings":
 					{
-						"buffer_size": 4480,
+						"buffer_size": 9506,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								911,
-								896
+								4627,
+								4627
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2984.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "app/images/logo.png",
+					"file": "app/scripts/controllers/main.js",
 					"settings":
 					{
-						"buffer_size": 6030,
+						"buffer_size": 2475,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2404,
+								2404
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 252.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "/C/Users/Seraphin/Mes sites/Le-site-du-camp-de-jeunes/.gitignore",
+					"file": "app/inscription.php",
 					"settings":
 					{
-						"buffer_size": 51,
+						"buffer_size": 1229,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								22,
-								22
+								765,
+								765
 							]
 						],
 						"settings":
 						{
-							"auto_name": "node_modules",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": ".editorconfig",
-					"settings":
-					{
-						"buffer_size": 415,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": ".bowerrc",
-					"settings":
-					{
-						"buffer_size": 38,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -411,7 +666,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -438,7 +693,7 @@
 	"menu_visible": true,
 	"replace":
 	{
-		"height": 62.0
+		"height": 63.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -451,16 +706,16 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 225.0,
+	"side_bar_width": 282.0,
 	"status_bar_visible": true
 }

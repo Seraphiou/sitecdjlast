@@ -1,53 +1,98 @@
 <!doctype html>
 <html class="no-js">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Camp Jeunesse 2016</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-carousel/dist/angular-carousel.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="bower_components/angular-carousel/dist/angular-carousel.min.css" />
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-  </head>
-  <body ng-app="leSiteDuCampDeJeunesApp">
+</head>
+
+<body ng-app="leSiteDuCampDeJeunesApp" scrollindex>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.3";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+      <![endif]-->
+
 
     <!-- Add your site or application content here -->
-    <div class="container">
-      <div class="header">
-        <img src="images/logo.png" alt="ICC logo" class="top-logo">
-        <ul class="header-nav nav nav-pills">
-          <li class="active"><a href="#presentation">PRÉSENTATION</a></li>
-          <li><a href="#videos">VIDÉOS</a></li>
-          <li><a href="#inscription">INSCRIPTION</a></li>
-          <li><a href="#contacts ">CONTACTS</a></li>
-          <li><a href="#faq">FOIRE AUX QUESTIONS</a></li>
+    <div class="container" ng-controller="headerCtrl">
+        <ul class="mobile-navs" ng-show="mobileNav">
+            <li class="mobile-link"><a ng-click="scrollToId('presentation');mobileNav=!mobileNav">PRÉSENTATION</a></li>
+            <li class="mobile-link"><a ng-click="scrollToId('videos');mobileNav=!mobileNav">VIDÉOS</a></li>
+            <li class="mobile-link"><a ng-click="scrollToId('inscription');mobileNav=!mobileNav">INSCRIPTION</a></li>
+            <li class="mobile-link"><a ng-click="scrollToId('contact');mobileNav=!mobileNav">CONTACTS</a></li>
+            <li class="mobile-link"><a ng-click="scrollToId('faq');mobileNav=!mobileNav">FOIRE AUX QUESTIONS</a></li>
         </ul>
-      </div>
+        <div class="header">
+            <a target="_blank" href="http://jeunes.impactcentrechretien.com/"><img src="images/logo.png" alt="ICC logo" class="top-logo"></a>
+            <span class="nav-bars" ng-click="mobileNav=!mobileNav">
+          <span class="nav-bar"></span>
+            <span class="nav-bar"></span>
+            <span class="nav-bar"></span>
+            </span>
+            <ul class="header-nav nav nav-pills">
+                <li><a ng-click="scrollToId('presentation')">PRÉSENTATION</a></li>
+                <li><a ng-click="scrollToId('videos')">VIDÉOS</a></li>
+                <li><a ng-click="scrollToId('inscription')">INSCRIPTION</a></li>
+                <li><a ng-click="scrollToId('contact')">CONTACTS</a></li>
+                <li><a ng-click="scrollToId('faq')">FOIRE AUX QUESTIONS</a></li>
+            </ul>
+        </div>
+        <div class="header-container">
+            
+            <div class="outer-bg-container">
+                <div class="inner-bg-container">
+                    <img src="images/petit-groupe.jpg" class="bg-image blur" />
+                </div>
+            </div>
+        </div>
 
-      <div ng-view="" class="main-section"></div>
-      <div class="footer">
-        Performed by Séraphin
-      </div>
+        <div ng-view="" class="main-section"></div>
+        <div class="footer">
+            ©2015 Tous droits réservés Ministère Jeunes d'Impact
+        </div>
     </div>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
     </script>
 
     <!-- build:js(.) scripts/oldieshim.js -->
@@ -79,13 +124,19 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-timer/dist/angular-timer.js"></script>
+    <script src="bower_components/angular-carousel/dist/angular-carousel.js"></script>
+    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script src="bower_components/angular-slick/dist/slick.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/header.js"></script>
+    <!-- endbuild -->
 </body>
+
 </html>
