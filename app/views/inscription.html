@@ -26,30 +26,28 @@
 		</section>
 		<section class="payment">
 			
-      <div class="page-section">
-        <h3 class="section-title">PAIEMENT</h3>
+			<div class="page-section">
+				<h3 class="section-title">PAIEMENT</h3>
 				Choisissez votre mode de paiement(en 1 fois, 4 fois ou 8 fois).
 				Le paiement s'effectue depuis PayPal. 
 				Une fois redirigé vers la platforme de paiement, vous pourrez choisir si vous souhaitez payer par carte bancaire ou depuis un compte PayPal.
 				Veuillez choisir un mode de paiement :
 				<div class="form-row">
-        	<label for="one-time">1x</label>
+					<label for="one-time">1x</label>
 					<input type="radio" name="one-time" ng-model="paymentScheduling" checked="true" value="1"/>
-        </div>
+				</div>
 				<div class="form-row">
-        	<label for="one-time"><label for="four-times">4x</label></label>
+					<label for="four-times">4x</label>
 					<input type="radio" name="four-times" ng-model="paymentScheduling" value="4"/>
-        </div>
+				</div>
 				<div class="form-row">
 					<label for="height-times">8x</label>
 					<input type="radio" name="height-times" ng-model="paymentScheduling" value="8"/>
-        </div>
-        <div ng-if="paymentScheduling">
-        	<button class="button">Finaliser votre inscription et payer en {{paymentScheduling}} fois</button>
+				</div>
+				<div ng-if="paymentScheduling">
+					<button class="button">Finaliser votre inscription et payer en {{paymentScheduling}} fois</button>
 				</div>
       </div>
-
-
 		</section>
 	</div>
 </div>
