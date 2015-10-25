@@ -17,6 +17,7 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="bower_components/angular-carousel/dist/angular-carousel.min.css" />
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/inscription.css">
     <!-- endbuild -->
 </head>
 
@@ -38,43 +39,9 @@
 
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-controller="headerCtrl">
-        <ul class="mobile-navs" ng-show="mobileNav">
-            <li class="mobile-link"><a ng-click="scrollToId('presentation');mobileNav=!mobileNav">PRÉSENTATION</a></li>
-            <li class="mobile-link"><a ng-click="scrollToId('videos');mobileNav=!mobileNav">VIDÉOS</a></li>
-            <li class="mobile-link"><a ng-click="scrollToId('inscription');mobileNav=!mobileNav">INSCRIPTION</a></li>
-            <li class="mobile-link"><a ng-click="scrollToId('contact');mobileNav=!mobileNav">CONTACTS</a></li>
-            <li class="mobile-link"><a ng-click="scrollToId('faq');mobileNav=!mobileNav">FOIRE AUX QUESTIONS</a></li>
-        </ul>
-        <div class="header">
-            <a target="_blank" href="http://jeunes.impactcentrechretien.com/"><img src="images/logo.png" alt="ICC logo" class="top-logo"></a>
-            <span class="nav-bars" ng-click="mobileNav=!mobileNav">
-          <span class="nav-bar"></span>
-            <span class="nav-bar"></span>
-            <span class="nav-bar"></span>
-            </span>
-            <ul class="header-nav nav nav-pills">
-                <li><a ng-click="scrollToId('presentation')">PRÉSENTATION</a></li>
-                <li><a ng-click="scrollToId('videos')">VIDÉOS</a></li>
-                <li><a ng-click="scrollToId('inscription')">INSCRIPTION</a></li>
-                <li><a ng-click="scrollToId('contact')">CONTACTS</a></li>
-                <li><a ng-click="scrollToId('faq')">FOIRE AUX QUESTIONS</a></li>
-            </ul>
-        </div>
-        <div class="header-container">
-            
-            <div class="outer-bg-container">
-                <div class="inner-bg-container">
-                    <img src="images/petit-groupe.jpg" class="bg-image blur" />
-                </div>
-            </div>
-        </div>
+    
 
-        <div ng-view="" class="main-section"></div>
-        <div class="footer">
-            ©2015 Tous droits réservés Ministère Jeunes d'Impact
-        </div>
-    </div>
+    <div ng-view=""></div>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -134,7 +101,7 @@
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/inscription.js"></script>
     <script src="scripts/controllers/header.js"></script>
     <!-- endbuild -->
 </body>

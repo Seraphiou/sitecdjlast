@@ -1,148 +1,198 @@
-<div id="main-content">
-	<section id="presentation">
-		<div class="page-section">
-			<h3 class="section-title">PRÉSENTATION</h3>
-			Le Camp Jeunesse est un moment privilégié pour les jeunes en Christ de se retrouver pendant les vacances dans un cadre propice à la prière, la convivialité et le partage.
-			Cet été le Camp Jeunesse sera inter-campus, c'est à dire organisé avec la participation de tout les Campus ICC d'Europe.
-			De plus il se déroulera dans un établissement 3 étoiles d'exception : Le Langley Resort Royal de Guadeloupe.
-			Alors inscris-toi vite et rendez-vous du 15 au 25 Juillet 2016 !
-		</div>
-	</section><!--   end presentation   -->
+<div class="container">
+  <ul class="mobile-navs" ng-show="mobileNav">
+    <li class="mobile-link"><a ng-click="scrollToId('presentation');mobileNav=!mobileNav">PRÉSENTATION</a></li>
+    <li class="mobile-link"><a ng-click="scrollToId('videos');mobileNav=!mobileNav">VIDÉOS</a></li>
+    <li class="mobile-link"><a ng-click="scrollToId('inscription');mobileNav=!mobileNav">INSCRIPTION</a></li>
+    <li class="mobile-link"><a ng-click="scrollToId('contact');mobileNav=!mobileNav">CONTACTS</a></li>
+    <li class="mobile-link"><a ng-click="scrollToId('faq');mobileNav=!mobileNav">FOIRE AUX QUESTIONS</a></li>
+  </ul>
+  <div class="header">
+    <a target="_blank" href="http://jeunes.impactcentrechretien.com/"><img src="images/logo.png" alt="ICC logo" class="top-logo"></a>
+    <span class="nav-bars" ng-click="mobileNav=!mobileNav">
+			<span class="nav-bar"></span>
+    <span class="nav-bar"></span>
+    <span class="nav-bar"></span>
+    </span>
+    <ul class="header-nav nav nav-pills">
+      <li><a ng-click="scrollToId('presentation')">PRÉSENTATION</a></li>
+      <li><a ng-click="scrollToId('videos')">VIDÉOS</a></li>
+      <li><a ng-click="scrollToId('inscription')">INSCRIPTION</a></li>
+      <li><a ng-click="scrollToId('contact')">CONTACTS</a></li>
+      <li><a ng-click="scrollToId('faq')">FOIRE AUX QUESTIONS</a></li>
+      <li><a ng-click="goToInscription()">a</a></li>
 
-	<section id="videos">
-		<div class="page-section">
-			<h3 class="section-title">VIDÉO</h3>
-			<slick dots="true">
-				<div ng-repeat="video in videos" class="nav-content">
-					<!-- <h4 class="video-title">{{video.title}}</h4> -->
-					<div class="embed-container">
-						<!-- <iframe ng-src="{{trustSrc(video.url)}}" frameborder='0' allowfullscreen>
-						</iframe> -->
-						<embed type="application/x-shockwave-flash" src="{{trustSrc(video.url)}}" width="560" height="315" id="sfwvideo" name="sfwvideo" bgcolor="#FFFFFF" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="file={{trustSrc(video.url)}}">
-					</div>
+    </ul>
+  </div>
+  <div class="header-container">
 
-					<p class="video-description">
-						{{video.description}}
-					</p>
-				</div>
-			</slick>
-		</div>
-	</section><!--   end videos   -->
-	<section id="inscription">
-		<div class="page-section">
-			<h3 class="section-title">INSCRIPTION</h3>
-			Pour vous inscrire merci de remplir le formulaire ci-dessous
-			<br/>
-			Le Camp démarre dans <timer class="countdown" end-time="dateDuCamp">{{days}} jour{{daysS}}, {{hours}} heure{{hoursS}}, {{minutes}} minute{{minutesS}}, {{seconds}} seconde{{secondsS}}.</timer>
-			<br/>
-			<form name="inscription" id="inscription-form" class="form">
-				<div class="form-row l-cols2">
-					<div class="cols2-col l-cols2">
-						<div class="cols2-col text-label">Nom :</div>
-						<div class="cols2-col"><input type="text" class="text-input" name="name" ng-model="name" placeholder="Tapez votre nom" required/>
-						<span ng-show="inscription.name.$error.required && inscription.name.$error.dirty">Veuillez entrer votre nom.</span></div>
-					</div>
-					<div class="cols2-col l-cols2">
-						<div class="cols2-col text-label">Prénom :</div>
-						<div class="cols2-col">
-							<input type="text" class="text-input" name="firstname" ng-model="firstname" placeholder="Tapez votre prénom" required/>
-							<span ng-show="inscription.firstname.$error.required && inscription.firstname.$error.dirty">Veuillez entrer votre prénom.</span>
-						</div>
-					</div>
-				</div>
-				<div class="form-row l-cols2">
-					<div class="cols2-col l-cols2">
-						<div class="cols2-col text-label">Adresse e-mail :</div>
-						<div class="cols2-col"><input type="email" name="email" class="text-input" ng-model="email" placeholder="exemple@domain.com" ng-pattern="/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/" required/>
-							<span ng-show="inscription.email.$error.required && inscription.email.$error.dirty">Veuillez entrer votre adresse email.</span>
-							<span ng-show="inscription.email.$error.pattern">Veuillez entrer une adresse email valide.</span>
-						</div>
-					</div>
-					<div class="cols2-col l-cols2">
-						<div class="cols2-col text-label">Numéro de téléphone :</div>
-						<div class="cols2-col">
-							<input type="tel" class="text-input" name="phoneNumber" ng-pattern="/^\+*[0-9]*$/" ng-model="phoneNumber" placeholder="Mentionez le prefixe international" required/>
-							<span ng-show="inscription.phoneNumber.$error.pattern">Veuillez entre un numero valide avec préfixe international.</span>
-						</div>
-					</div>
-				</div>
-				<div class="form-row l-cols2">
-					<div class="cols2-col l-cols2">
-						<div class="cols2-col text-label">Adresse Postale :</div>
-						<div class="cols2-col"><textarea type="address" class="text-input" name="postalAddress" ng-model="postalAddress" placeholder="Numero, rue, boulervard..." required></textarea></div>
-					</div>
-					<div class="cols2-col l-cols2">
-						<div class="cols2-col text-label">Code Postal :</div>
-						<div class="cols2-col"><input type="zip" class="text-input" name="postalCode" ng-model="postalCode" placeholder="Code postal" required/></div>
-					</div>
-				</div>
-				<div class="form-row l-cols2">
-					<div class="cols2-col l-cols2">
-						<div class="cols2-col text-label">Ville :</div>
-						<div class="cols2-col"><input type="city" name="city" class="text-input" ng-model="city" placeholder="Ville" required/></div>
-					</div>
-					<div class="cols2-col l-cols2">
-						<div class="cols2-col text-label">Pays :</div>
-						<div class="cols2-col"><input type="country" name="coutry" class="text-input" ng-model="country" placeholder="Pays" required/></div>
-					</div>
-				</div>
-				<div class="form-row l-cols2">
-					<div class="cols2-col l-cols2">
-						<div class="cols2-col  text-label">
-							Date de naissance :
-						</div>
-						<div class="cols2-col">
-							<input class="text-input" type="date" ng-model="birthday" name="birthday" placeholder="JJ/MM/AAAA" required/>
-						</div>
-					</div>
-				</div>
-				<div class="form-row l-cols2">
-					<div class="cols2-col l-cols2">
-						<div class="cols2-col text-label">
-							Membre d'ICC :
-						</div>
-						<div class="cols2-col">
-							<input type="checkbox" ng-model="isICC"/>
-						</div>
-					</div>
-					<div class="cols2-col l-cols2" ng-show="isICC">
-						<div class="cols2-col text-label">
-							De quel campus ? :
-						</div>
-						<div class="cols2-col">
-							<select  class="text-input" ng-model="campusName" ng-options="cez for cez in campusOptions">
-							</select>
-						</div>
-					</div>
-				</div>
-				<div class="submit-section"><input type="submit" ng-click="sendConfirmation()" class="button" value="Passer à l'étape suivante"/></div>
-			</form>
+    <div class="outer-bg-container">
+      <div class="inner-bg-container">
+        <img src="images/petit-groupe.jpg" class="bg-image blur" />
+      </div>
+    </div>
+  </div>
+  <div id="main-content" class="main-section">
+    <section id="presentation">
+      <div class="page-section">
+        <h3 class="section-title">PRÉSENTATION</h3> Le Camp Jeunesse est un moment privilégié pour les jeunes en Christ de se retrouver pendant les vacances dans un cadre propice à la prière, la convivialité et le partage. Cet été le Camp Jeunesse sera inter-campus, c'est à dire organisé avec la participation de tout les Campus ICC d'Europe. De plus il se déroulera dans un établissement 3 étoiles d'exception : Le Langley Resort Royal de Guadeloupe. Alors inscris-toi vite et rendez-vous du 15 au 25 Juillet 2016 !
+      </div>
+    </section>
+    <!--   end presentation   -->
 
-		</div>
-	</section><!--   end inscription   -->
-	<section id="contact">
-		<div class="page-section">
-			<h3 class="section-title">CONTACT</h3>
-			Retrouvez nous sur facebook et posez nous toute vos questions sur cette page.
-			<div class="social-section">
-				<span id="icon-group" class="social-group">
-	       			<a target="_blank" href="https://www.facebook.com/CampJeunesse2013"><img src="images/facebook.png" alt="Facebook MJI" class="social-logo"/></a>
-	       			<a target="_blank" href="https://twitter.com/MJI_ICC_Paris"><img src="images/twitter.png" alt="Twitter MJI" class="social-logo"/></a>
-	       			<a target="_blank" href="https://www.youtube.com/user/JeunesImpact/feed"><img src="images/youtube.png" alt="Twitter MJI" class="social-logo"/></a>
-       			</span>
-       		</div>
-       		<div class="fb-part">
-       			<div class="fb-like" data-href="https://www.facebook.com/CampJeunesse2013" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-       		</div>
-		</div>
-	</section><!--   end contact   -->
-	<section id="faq">
-		<div class="page-section">
-			<h3 class="section-title">FOIRE AUX QUESTIONS</h3>
-			Voici quelques unes des questions fréquemment posés:
-			<ul class="faq-item">
-				<li class="faq-question">Est-ce que le camp est réservé aux membres de ICC ?</li>
-				<li class="faq-answer">Le camp est ouvert également aux jeunes qui ne fréquentent pas un campus ICC.</li>
-			</ul>
-		</div>
-	</section><!--   end faq   -->
+    <section id="videos">
+      <div class="page-section">
+        <h3 class="section-title">VIDÉO</h3>
+        <slick dots="true">
+          <div ng-repeat="video in videos" class="nav-content">
+            <!-- <h4 class="video-title">{{video.title}}</h4> -->
+            <div class="embed-container">
+              <!-- <iframe ng-src="{{trustSrc(video.url)}}" frameborder='0' allowfullscreen>
+</iframe> -->
+              <embed type="application/x-shockwave-flash" src="{{trustSrc(video.url)}}" width="560" height="315" id="sfwvideo" name="sfwvideo" bgcolor="#FFFFFF" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="file={{trustSrc(video.url)}}">
+            </div>
+
+            <p class="video-description">
+              {{video.description}}
+            </p>
+          </div>
+        </slick>
+      </div>
+    </section>
+    <!--   end videos   -->
+    <section id="inscription">
+      <div class="page-section">
+        <h3 class="section-title">INSCRIPTION</h3> Pour vous inscrire merci de remplir le formulaire ci-dessous
+        <br/> Le Camp démarre dans
+        <timer class="countdown" end-time="dateDuCamp">{{days}} jour{{daysS}}, {{hours}} heure{{hoursS}}, {{minutes}} minute{{minutesS}}, {{seconds}} seconde{{secondsS}}.</timer>
+        <br/>
+        <form name="inscription" id="inscription-form" class="form">
+          <div class="form-row l-cols2">
+            <div class="cols2-col l-cols2">
+              <div class="cols2-col text-label">Nom :</div>
+              <div class="cols2-col">
+                <input type="text" class="text-input" name="name" ng-model="name" placeholder="Tapez votre nom" required/>
+                <span ng-show="inscription.name.$error.required && inscription.name.$error.dirty">Veuillez entrer votre nom.</span></div>
+            </div>
+            <div class="cols2-col l-cols2">
+              <div class="cols2-col text-label">Prénom :</div>
+              <div class="cols2-col">
+                <input type="text" class="text-input" name="firstname" ng-model="firstname" placeholder="Tapez votre prénom" required/>
+                <span ng-show="inscription.firstname.$error.required && inscription.firstname.$error.dirty">Veuillez entrer votre prénom.</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-row l-cols2">
+            <div class="cols2-col l-cols2">
+              <div class="cols2-col text-label">Adresse e-mail :</div>
+              <div class="cols2-col">
+                <input type="email" name="email" class="text-input" ng-model="email" placeholder="exemple@domain.com" ng-pattern="/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/" required/>
+                <span ng-show="inscription.email.$error.required && inscription.email.$error.dirty">Veuillez entrer votre adresse email.</span>
+                <span ng-show="inscription.email.$error.pattern">Veuillez entrer une adresse email valide.</span>
+              </div>
+            </div>
+            <div class="cols2-col l-cols2">
+              <div class="cols2-col text-label">Numéro de téléphone :</div>
+              <div class="cols2-col">
+                <input type="tel" class="text-input" name="phoneNumber" ng-pattern="/^\+*[0-9]*$/" ng-model="phoneNumber" placeholder="Mentionez le prefixe international" required/>
+                <span ng-show="inscription.phoneNumber.$error.pattern">Veuillez entre un numero valide avec préfixe international.</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-row l-cols2">
+            <div class="cols2-col l-cols2">
+              <div class="cols2-col text-label">Adresse Postale :</div>
+              <div class="cols2-col">
+                <textarea type="address" class="text-input" name="postalAddress" ng-model="postalAddress" placeholder="Numero, rue, boulervard..." required></textarea>
+              </div>
+            </div>
+            <div class="cols2-col l-cols2">
+              <div class="cols2-col text-label">Code Postal :</div>
+              <div class="cols2-col">
+                <input type="zip" class="text-input" name="postalCode" ng-model="postalCode" placeholder="Code postal" required/>
+              </div>
+            </div>
+          </div>
+          <div class="form-row l-cols2">
+            <div class="cols2-col l-cols2">
+              <div class="cols2-col text-label">Ville :</div>
+              <div class="cols2-col">
+                <input type="city" name="city" class="text-input" ng-model="city" placeholder="Ville" required/>
+              </div>
+            </div>
+            <div class="cols2-col l-cols2">
+              <div class="cols2-col text-label">Pays :</div>
+              <div class="cols2-col">
+                <input type="country" name="coutry" class="text-input" ng-model="country" placeholder="Pays" required/>
+              </div>
+            </div>
+          </div>
+          <div class="form-row l-cols2">
+            <div class="cols2-col l-cols2">
+              <div class="cols2-col  text-label">
+                Date de naissance :
+              </div>
+              <div class="cols2-col">
+                <input class="text-input" type="date" ng-model="birthday" name="birthday" placeholder="JJ/MM/AAAA" required/>
+              </div>
+            </div>
+          </div>
+          <div class="form-row l-cols2">
+            <div class="cols2-col l-cols2">
+              <div class="cols2-col text-label">
+                Membre d'ICC :
+              </div>
+              <div class="cols2-col">
+                <input type="checkbox" ng-model="isICC" />
+              </div>
+            </div>
+            <div class="cols2-col l-cols2" ng-show="isICC">
+              <div class="cols2-col text-label">
+                De quel campus ? :
+              </div>
+              <div class="cols2-col">
+                <select class="text-input" ng-model="campusName" ng-options="cez for cez in campusOptions">
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="submit-section">
+            <input type="submit" ng-click="sendConfirmation()" class="button" value="Passer à l'étape suivante" />
+          </div>
+        </form>
+
+      </div>
+    </section>
+    <!--   end inscription   -->
+    <section id="contact">
+      <div class="page-section">
+        <h3 class="section-title">CONTACT</h3> Retrouvez nous sur facebook et posez nous toute vos questions sur cette page.
+        <div class="social-section">
+          <span id="icon-group" class="social-group">
+					<a target="_blank" href="https://www.facebook.com/CampJeunesse2013"><img src="images/facebook.png" alt="Facebook MJI" class="social-logo"/></a>
+					<a target="_blank" href="https://twitter.com/MJI_ICC_Paris"><img src="images/twitter.png" alt="Twitter MJI" class="social-logo"/></a>
+					<a target="_blank" href="https://www.youtube.com/user/JeunesImpact/feed"><img src="images/youtube.png" alt="Twitter MJI" class="social-logo"/></a>
+				</span>
+        </div>
+        <div class="fb-part">
+          <div class="fb-like" data-href="https://www.facebook.com/CampJeunesse2013" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+        </div>
+      </div>
+    </section>
+    <!--   end contact   -->
+    <section id="faq">
+      <div class="page-section">
+        <h3 class="section-title">FOIRE AUX QUESTIONS</h3> Voici quelques unes des questions fréquemment posés:
+        <ul class="faq-item">
+          <li class="faq-question">Est-ce que le camp est réservé aux membres de ICC ?</li>
+          <li class="faq-answer">Le camp est ouvert également aux jeunes qui ne fréquentent pas un campus ICC.</li>
+        </ul>
+      </div>
+    </section>
+    <!--   end faq   -->
+
+    <div class="footer">
+      ©2015 Tous droits réservés Ministère Jeunes d'Impact
+    </div>
+
+  </div>
+</div>

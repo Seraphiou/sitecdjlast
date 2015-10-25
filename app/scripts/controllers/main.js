@@ -2,15 +2,25 @@
 
 
 angular.module('leSiteDuCampDeJeunesApp')
-  .controller('MainCtrl', function ($scope, $location, $anchorScroll, $sce, inscriptionService ) {
+  .controller('MainCtrl', function ($scope, $location, $anchorScroll, $sce, inscriptionService, anchorSmoothScroll ) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+    $scope.goToInscription = function(){
+        $location.path('/inscription');
+    };
+    
 	$scope.trustSrc = function(src) {
 	    return $sce.trustAsResourceUrl(src);
 	};
+
+    $scope.scrollToId=
+        function(id){
+          anchorSmoothScroll.scrollTo(id);
+        };
+
     $scope.dateDuCamp=new Date('2016-07-15').getTime();
 
 	$scope.campusOptions=[
@@ -42,14 +52,12 @@ angular.module('leSiteDuCampDeJeunesApp')
 	$scope.sendConfirmation = function(){
         inscriptionService.storeConfirmation($scope.name, $scope.firstname, $scope.email, $scope.phoneNumber, $scope.postalAddress, $scope.postalCode, $scope.city, $scope.country, $scope.birthday, $scope.isICC, $scope.campusName).then(
     		function(data) {
-                if (data.indexOf('pwerror')===-1) {
-                    $location.path('/about');
+                if (data.indexOf('An error occured')===-1) {
+                    $location.path('/inscription');
                 }else{
-                    alert(data);
                 }
     		}, function(error) {
     			$scope.error = error;
-                alert(error);
     		}
     	);
     };
