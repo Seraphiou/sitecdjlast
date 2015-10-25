@@ -1,0 +1,55 @@
+<div class="container">
+  <ul class="mobile-navs" ng-show="mobileNav">
+    <li class="mobile-link"><a ng-click="scrollToId('presentation');mobileNav=!mobileNav">PAGE D'ACCUEIL</a></li>
+  </ul>
+  <div class="header">
+    <a target="_blank" href="http://jeunes.impactcentrechretien.com/"><img src="images/logo.png" alt="ICC logo" class="top-logo"></a>
+    <span class="nav-bars" ng-click="mobileNav=!mobileNav">
+			<span class="nav-bar"></span>
+	    <span class="nav-bar"></span>
+	    <span class="nav-bar"></span>
+    </span>
+    <ul class="header-nav nav nav-pills">
+      <li><a ng-click="">PAGE D'ACCUEIL</a></li>
+    </ul>
+  </div>
+  <div class="inscription-container">
+		
+		<section class="response">
+
+      <div class="page-section">
+        <h3 class="section-title">INSCRIPTION INITIALISÉE</h3>
+				Votre inscription a bien été commencée.
+
+				Veuillez maintenant procéder au paiement pour finaliser.
+      </div>
+		</section>
+		<section class="payment">
+			
+      <div class="page-section">
+        <h3 class="section-title">PAIEMENT</h3>
+				Choisissez votre mode de paiement(en 1 fois, 4 fois ou 8 fois).
+				Le paiement s'effectue depuis PayPal. 
+				Une fois redirigé vers la platforme de paiement, vous pourrez choisir si vous souhaitez payer par carte bancaire ou depuis un compte PayPal.
+				Veuillez choisir un mode de paiement :
+				<div class="form-row">
+        	<label for="one-time">1x</label>
+					<input type="radio" name="one-time" ng-model="paymentScheduling" checked="true" value="1"/>
+        </div>
+				<div class="form-row">
+        	<label for="one-time"><label for="four-times">4x</label></label>
+					<input type="radio" name="four-times" ng-model="paymentScheduling" value="4"/>
+        </div>
+				<div class="form-row">
+					<label for="height-times">8x</label>
+					<input type="radio" name="height-times" ng-model="paymentScheduling" value="8"/>
+        </div>
+        <div ng-if="paymentScheduling">
+        	<button class="button">Finaliser votre inscription et payer en {{paymentScheduling}} fois</button>
+				</div>
+      </div>
+
+
+		</section>
+	</div>
+</div>
