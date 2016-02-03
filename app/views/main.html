@@ -1,27 +1,28 @@
 <div class="container">
-  <ul class="mobile-navs" ng-show="mobileNav">
-    <li class="mobile-link"><a ng-click="scrollToId('presentation');mobileNav=!mobileNav">PRÉSENTATION</a></li>
-    <li class="mobile-link"><a ng-click="scrollToId('videos');mobileNav=!mobileNav">VIDÉOS</a></li>
-    <li class="mobile-link"><a ng-click="scrollToId('inscription');mobileNav=!mobileNav">INSCRIPTION</a></li>
-    <li class="mobile-link"><a ng-click="scrollToId('contact');mobileNav=!mobileNav">CONTACTS</a></li>
-    <li class="mobile-link"><a ng-click="scrollToId('faq');mobileNav=!mobileNav">FOIRE AUX QUESTIONS</a></li>
-  </ul>
   <div class="header">
-    <a target="_blank" href="http://jeunes.impactcentrechretien.com/"><img src="images/logo.png" alt="ICC logo" class="top-logo"></a>
-    <span class="nav-bars" ng-click="mobileNav=!mobileNav">
-			<span class="nav-bar"></span>
-    <span class="nav-bar"></span>
-    <span class="nav-bar"></span>
-    </span>
-    <ul class="header-nav nav nav-pills">
-      <li><a ng-click="scrollToId('presentation')">PRÉSENTATION</a></li>
-      <li><a ng-click="scrollToId('videos')">VIDÉOS</a></li>
-      <li><a ng-click="scrollToId('inscription')">INSCRIPTION</a></li>
-      <li><a ng-click="scrollToId('contact')">CONTACTS</a></li>
-      <li><a ng-click="scrollToId('faq')">FOIRE AUX QUESTIONS</a></li>
-      <li><a ng-click="goToInscription()">a</a></li>
-
+    <ul class="mobile-navs" ng-show="mobileNav">
+      <li class="mobile-link"><a ng-click="scrollToId('presentation');mobileNav=!mobileNav">PRÉSENTATION</a></li>
+      <li class="mobile-link"><a ng-click="scrollToId('videos');mobileNav=!mobileNav">VIDÉOS</a></li>
+      <li class="mobile-link"><a ng-click="scrollToId('inscription');mobileNav=!mobileNav">INSCRIPTION</a></li>
+      <li class="mobile-link"><a ng-click="scrollToId('contact');mobileNav=!mobileNav">CONTACTS</a></li>
+      <li class="mobile-link"><a ng-click="scrollToId('faq');mobileNav=!mobileNav">FOIRE AUX QUESTIONS</a></li>
     </ul>
+    <div class="header-content">
+      <a target="_blank" href="http://jeunes.impactcentrechretien.com/"><img src="images/logo.png" alt="ICC logo" class="top-logo"></a>
+      <span class="nav-bars" ng-click="mobileNav=!mobileNav">
+  		<span class="nav-bar"></span>
+      <span class="nav-bar"></span>
+      <span class="nav-bar"></span>
+      </span>
+      <ul class="header-nav nav nav-pills">
+        <li><a ng-click="scrollToId('presentation')">PRÉSENTATION</a></li>
+        <li><a ng-click="scrollToId('videos')">VIDÉOS</a></li>
+        <li><a ng-click="scrollToId('inscription')">INSCRIPTION</a></li>
+        <li><a ng-click="scrollToId('contact')">CONTACTS</a></li>
+        <li><a ng-click="scrollToId('faq')">FOIRE AUX QUESTIONS</a></li>
+
+      </ul>
+    </div>
   </div>
   <div class="header-container">
 
@@ -181,11 +182,128 @@
     <!--   end contact   -->
     <section id="faq">
       <div class="page-section">
-        <h3 class="section-title">FOIRE AUX QUESTIONS</h3> Voici quelques unes des questions fréquemment posés:
-        <ul class="faq-item">
-          <li class="faq-question">Est-ce que le camp est réservé aux membres de ICC ?</li>
-          <li class="faq-answer">Le camp est ouvert également aux jeunes qui ne fréquentent pas un campus ICC.</li>
-        </ul>
+        <h3 class="section-title">FOIRE AUX QUESTIONS</h3> Voici quelques unes des questions fréquemment posées:
+        <p>
+          <ul class="faq-item">
+            <li class="faq-question">Est-ce que le camp est réservé aux membres de ICC ?</li>
+            <li class="faq-answer">Le camp est ouvert également aux jeunes qui ne fréquentent pas un campus ICC.</li>
+            <li class="faq-question">Où a lieu le CIC 2016 ? </li>
+            <li class="faq-answer">Saint Anne (Guadeloupe)
+              <div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30646.398523466698!2d-61.371867!3d16.230728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3263cbbac4a0261c!2sPierre+et+Vacances+Villages+Clubs+Sainte-Anne!5e0!3m2!1sfr!2sfr!4v1454452619639" max-width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+            </li>
+            <li class="faq-question">Où logera-t-on ?</li>
+            <li class="faq-answer">
+              Pierre et Vacances, Saint Anne (Guadeloupe)
+            </li>
+            <li class="faq-question">Combien de temps durera le camp ?</li>
+            <li class="faq-answer">La durée du CJ2016 est de 7 jours (6 jours et 7 nuits) – Du 18 au 25 juillet 2016.</li>
+            <li class="faq-question">Qui peut venir ?</li>
+            <li class="faq-answer">Le CJ est ouvert à tout jeune de 15 à 35ans environ dans la limite des places disponibles (250 places).</li>
+            <li class="faq-question">Quel est le coût du camp ? </li>
+            <li class="faq-answer">
+              Deux formules sont envisageables: 
+              Formule complète comprenant hébergement, la restauration et le transport s’élève à 1200€/personne. 
+              Formule partielle comprenant hébergement et la restauration uniquement s’élève à 550€. 
+              Dans les deux cas, cela s’effectue en pension complète.
+            </li>
+            <li class="faq-question">Quand et où débutent les inscriptions ?</li>
+            <li class="faq-answer">
+              Les inscriptions débutent le  11/11/2015 lors du Culte des jeunes. 
+              Elles peuvent se faire directement sur le site campjeunesse.com ou sur le stand MJI de chaque campus prévu à cet effet. 
+            </li>
+            <li class="faq-question">Les modes de règlements acceptés ?</li>
+            <li class="faq-answer">
+              En ligne via le site www.campjeunesse.com (paiement sécurisé),  par Chèque (à l’ordre de Jeunesse Des Nations) ou en espèces aux stands.
+              Il est nécessaire de verser 50% de la somme due pour sécuriser sa place.
+              Paiement en plusieurs fois prévu (Jusqu’à 10 fois – frais de transactions à vérifier)
+              Date limite: Juin 2016
+            </li>
+            <li class="faq-question">Peut-on se faire rembourser en cas d’annulation ?</li>
+            <li class="faq-answer">
+              Possibilité d’annuler et se faire rembourser jusqu’en juin 2016.
+            </li>
+            <li class="faq-question">
+              Quelles sont les différentes activités proposées par le camp ? Sont-elles comprises dans le prix ?</li>
+            <li class="faq-answer">
+              <table class="faq-table">
+                <tr><th>Activités gratuites</th><th>Activités payantes</th></tr>
+                <tr><td>Accès à la piscine</td><td>Bouée tractée</td></tr>
+                <tr><td>Accès à la plage de l’hôtel et à ses équipements (transats, parasols)</td><td>Activités du centre de plongée</td></tr>
+                <tr><td>Beach Volley, pétanque</td><td>Location de vélo</td></tr>
+                <tr><td>Salon de détente (téléviseur, bibliothèque)</td><td>Cours privés (tennis, yoga…)</td></tr>
+                <tr><td>Planche à voile, kayak</td><td>Billard & Babyfoot (à la pièce)</td></tr>
+                <tr><td>Hobie cat, optimist</td><td>Massages</td></tr>
+                <tr><td>Stand up paddle</td><td></td></tr>
+                <tr><td>Laser</td><td></td></tr>
+                <tr><td>Aquagym, Zumba</td><td></td></tr>
+                <tr><td>Accès au terrain de tennis avec prêt de raquettes et balles</td><td></td></tr>
+              </table>
+
+
+              NB : Pour les différentes activités, les mineurs devront obligatoirement fournir une autorisation parentale et les adultes devront signer une décharge pour désengager le MJI et ICC de toute responsabilité en cas d’accident.
+            </li>
+            <li class="faq-answer">
+              Possibilité d’annuler et se faire rembourser jusqu’en juin 2016.
+            </li>
+            <li class="faq-question">
+              Programme d’une journée-type ?
+            </li>
+            <li class="faq-answer">
+              Une journée-type comprend un temps de prière, un atelier, des temps de communion fraternelle et bien entendu les différents repas de la journée.
+            </li>
+            <li class="faq-question">
+              Y-a-t-il un code vestimentaire à respecter ?
+            </li>
+            <li class="faq-answer">
+              Tenue décente exigée.
+              « Couvrir les parties intimes de son corps, c’est se respecter et respecter autrui. »
+            </li>
+            <li class="faq-question">
+              Quelles sont les fournitures à rapporter ? Y-a-t-il des choses interdites?
+            </li>
+            <li class="faq-answer">
+              Sera transmis ultérieurement par email.
+            </li>
+            <li class="faq-question">
+              Quelles sont les règles/ le règlement intérieur à respecter pendant le camp ?
+            </li>
+            <li class="faq-answer">
+              Il sera accessible aux inscrits au temps convenable.
+            </li>
+            <li class="faq-question">
+              Comment s’organise le transport à l’aller et au retour du camp ?
+            </li>
+            <li class="faq-answer">
+              Il sera accessible aux inscrits au temps convenable.
+            </li>
+            <li class="faq-question">
+              Les déplacements aux alentours sont-ils prévus ?
+            </li>
+            <li class="faq-answer">
+              Possibilité à confirmer.
+            </li>
+            <li class="faq-question">
+              Faut-il prévoir de l’argent de poche ?
+            </li>
+            <li class="faq-answer">
+              Oui mais ce n’est pas obligatoire.
+            </li>
+            <li class="faq-question">
+              Où auront lieu les repas ?
+            </li>
+            <li class="faq-answer">
+              Les repas ont lieu dans le restaurant de l’hôtel. C’est un buffet.
+              Signaler des allergies éventuelles
+            </li>
+            <li class="faq-question">
+              Y-a-t-il des menus prévus pour des personnes soumises à un régime alimentaire spécifique ? 
+            </li>
+            <li class="faq-answer">
+              Non mais on suppose que le menu est suffisamment garni pour satisfaire tout le monde.
+            </li>
+          </ul>
+        </p>
       </div>
     </section>
     <!--   end faq   -->

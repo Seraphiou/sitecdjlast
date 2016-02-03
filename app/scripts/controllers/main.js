@@ -40,13 +40,13 @@ angular.module('leSiteDuCampDeJeunesApp')
 	'Lausanne'
 	];
 	$scope.videos=[
-		{
+		/*{
 			title:'Presentation CDJ2016',
 			url:'https://www.youtube.com/v/VPN9eap1VxM?enablejsapi=1&version=3&playerapiid=ytplayer'
-		},
+		},*/
 		{
 			title:'Presentation CDJ2016',
-			url:'https://www.youtube.com/v/fhkYqgz4F6I?enablejsapi=1&version=3&playerapiid=ytplayer'
+			url:'https://www.youtube.com/v/Ftq6NvS0kE4?enablejsapi=1&version=3&playerapiid=ytplayer'
 		}
 	];
 	$scope.sendConfirmation = function(){

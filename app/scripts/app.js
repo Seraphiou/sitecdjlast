@@ -19,7 +19,7 @@ angular
     'angular-carousel',
     'slick'
   ])
-  .config(function ($routeProvider, $locationProvider) {
+  .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -29,8 +29,14 @@ angular
         templateUrl: 'views/inscription.html',
         controller: 'InscriptionCtrl'
       })
+      .when('/admin/inscriptions', {
+        templateUrl: 'views/inscriptions.html',
+        controller: 'InscriptionsController'
+      })
+      .when('/admin/login', {
+        templateUrl: 'views/login.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
-      $locationProvider.html5Mode(true);
   });

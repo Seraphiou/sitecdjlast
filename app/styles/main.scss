@@ -70,7 +70,6 @@ ul[rn-carousel] > li {
   position: fixed;
   width: 100%;
   background-color: #eee;
-  height: 60px;
   text-align: center;
   z-index: 20;
 }
@@ -105,7 +104,7 @@ li.faq-answer {
   width: 105px;
   position: absolute;
   left: 0;
-  margin: .2em .5em;
+  margin: 0 .5em;
 }
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
   color: #fff;
@@ -179,9 +178,11 @@ div.social-section {
     color: #fff;
   }
 }
+.header-content {
+  height: 60px
+}
 .header-nav {
   display: inline-block;
-  height: 60px;
   height: 100%;
   cursor: pointer;
   -webkit-transition: all .5s; /* For Safari 3.1 to 6.0 */
@@ -204,8 +205,8 @@ div.social-section {
     }
     &:hover {
       border-bottom: solid 2px #fff;
-      -webkit-transition: all .5s; /* For Safari 3.1 to 6.0 */
-      transition: all .5s;
+      -webkit-transition: border-bottom .5s; /* For Safari 3.1 to 6.0 */
+      transition: border-bottom .5s;
     }
   }
   li a {
@@ -270,6 +271,15 @@ div.social-section {
   }
 
 }
+.faq-table {
+  margin: 2em;
+  border: solid 1px #fff;
+  & tr, & th, & td {
+    border: solid 1px #fff;
+    padding: .5em;
+  }
+}
+
 .video-title {
   font-size: 3em;
   font-weight: 300;
