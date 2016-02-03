@@ -1,0 +1,37 @@
+<div>
+  <div class="header-inscriptions">
+    <h2>Les inscrits</h2>
+  </div>
+  <div id="main-content">
+    <table class="inscriptions">
+      <tr>
+        <th class="case">ID</th>
+        <th class="case">Nom</th>
+        <th class="case">Prénom</th>
+        <th class="case">Naissance</th>
+        <th class="case">Paiement</th>
+        <th class="case">Membre ICC</th>
+        <th class="case">Campus</th>
+        <th class="case">Email</th>
+        <th class="case">Tel.</th>
+        <th class="case">Adresse</th>
+        <th class="case">Code</th>
+        <th class="case">Ville</th>
+      </tr>
+      <tr ng-repeat="subscriber in inscriptions">
+        <td class="case clear">{{subscriber.ID}}</td>
+        <td class="case clear">{{subscriber.NAME}}</td>
+        <td class="case clear">{{subscriber.FIRSTNAME}}</td>
+        <td class="case clear">{{subscriber.BIRTHDAY}}</td>
+        <td class="case clear">{{subscriber.PAYMENT}}</td>
+        <td class="case clear">{{subscriber.IS_FROM_ICC}}</td>
+        <td class="case clear">{{subscriber.ICC_CAMPUS}}</td>
+        <td class="case clear">{{subscriber.EMAIL_ADDRESS}}</td>
+        <td class="case clear">{{subscriber.PHONE_NUMBER}}</td>
+        <td class="case clear">{{subscriber.POSTAL_ADDRESS}}</td>
+        <td class="case clear">{{subscriber.POSTAL_CODE}}</td>
+        <td class="case clear">{{subscriber.CITY}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

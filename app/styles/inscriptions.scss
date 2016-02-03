@@ -1,0 +1,31 @@
+body {
+	background-color: #aff;
+}
+.header-inscriptions {
+	text-align: center;
+}
+.inscriptions {
+	margin: 0 auto;
+	padding: 0 1em;
+	max-width: 1200px;
+	margin-top: 2em;
+	background-color: #155;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+	table {
+		border: solid 1px #ccc;
+	}
+	.case {
+		padding: .5em;
+	
+	}
+	tr:nth-child(even) {
+		background-color: #188;
+		color: #fff;
+	}
+	tr:nth-child(odd) {
+		background-color: #1aa;
+		color: #fff;
+	}
+}
