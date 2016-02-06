@@ -45,14 +45,14 @@
         <h3 class="section-title">VIDÉO</h3>
         <slick dots="true">
           <div ng-repeat="video in videos" class="nav-content">
-            <!-- <h4 class="video-title">{{video.title}}</h4> -->
+            <h4 ng-if="video.title" class="video-title">{{video.title}}</h4>
             <div class="embed-container">
               <!-- <iframe ng-src="{{trustSrc(video.url)}}" frameborder='0' allowfullscreen>
 </iframe> -->
-              <embed type="application/x-shockwave-flash" src="{{trustSrc(video.url)}}" width="560" height="315" id="sfwvideo" name="sfwvideo" bgcolor="#FFFFFF" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="file={{trustSrc(video.url)}}">
+              <embed type="application/x-shockwave-flash" src="{{trustSrc(video.urlSrc)}}" width="560" height="315" id="sfwvideo" name="sfwvideo" bgcolor="#FFFFFF" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="file={{trustSrc(video.urlSrc)}}">
             </div>
 
-            <p class="video-description">
+            <p ng-if="video.description" class="video-description">
               {{video.description}}
             </p>
           </div>
@@ -303,16 +303,21 @@
               Non mais on suppose que le menu est suffisamment garni pour satisfaire tout le monde.
             </li>
           </ul> -->
-          <div ng-repeat="faqcat in faq">
-            <ul ng-repeat="question in faqcat.items" class="faq-item">
+          <div ng-repeat="faqcat in faq | orderBy:'order'">
+            <ul ng-repeat="question in faqcat.items | orderBy:'order'" class="faq-item">
               <li class="faq-question">
                 {{question.question}}
                 <div ng-if="question.hasAMapOnscreen">
-                  {{question.link}}
-                <iframe ng-src="{{question.link}}" max-width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                  <iframe src="{{trustSrc(question.link)}}" max-width="1000" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
               </li>
               <li class="faq-answer">
                 {{question.ans}}
+
+                <div ng-if="question.extraInfos" ng-repeat="info in question.extraInfos | orderBy:'order'">
+                  <b>{{info.keyInfo}}</b> :
+                  <div>{{info.valueInfo}}</div>
+                </div>
               </li>
             </ul>
           </div>

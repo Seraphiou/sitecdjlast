@@ -2,7 +2,7 @@
 
 
 angular.module('leSiteDuCampDeJeunesApp')
-  .controller('MainCtrl', function ($scope, $location, $anchorScroll, $sce, inscriptionService, anchorSmoothScroll, faqService ) {
+  .controller('MainCtrl', function ($scope, $location, $anchorScroll, $sce, inscriptionService, anchorSmoothScroll, faqService, videoService ) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -39,16 +39,6 @@ angular.module('leSiteDuCampDeJeunesApp')
 	'Toulouse',
 	'Lausanne'
 	];
-	$scope.videos=[
-		/*{
-			title:'Presentation CDJ2016',
-			url:'https://www.youtube.com/v/VPN9eap1VxM?enablejsapi=1&version=3&playerapiid=ytplayer'
-		},*/
-		{
-			title:'Presentation CDJ2016',
-			url:'https://www.youtube.com/v/Ftq6NvS0kE4?enablejsapi=1&version=3&playerapiid=ytplayer'
-		}
-	];
 	$scope.sendConfirmation = function(){
         inscriptionService.storeConfirmation($scope.name, $scope.firstname, $scope.email, $scope.phoneNumber, $scope.postalAddress, $scope.postalCode, $scope.city, $scope.country, $scope.birthday, $scope.isICC, $scope.campusName).then(
     		function(data) {
@@ -64,6 +54,13 @@ angular.module('leSiteDuCampDeJeunesApp')
     faqService.getFaq().then(
         function(faq){
             $scope.faq=faq;
+        }, function(error){
+            console.log('An error occurred : '+error+'.');
+        });
+    
+    videoService.getVideos().then(
+        function(videos){
+            $scope.videos=videos;
         }, function(error){
             console.log('An error occurred : '+error+'.');
         });
@@ -115,7 +112,26 @@ angular.module('leSiteDuCampDeJeunesApp').service('faqService', ['$http', '$q', 
             )
             .error(
                 function(error) {
-                    def.reject('Failed to store : ' + error);
+                    def.reject('Failed to get faqs : ' + error);
+                }
+            );
+        return def.promise;
+    };
+}]);
+angular.module('leSiteDuCampDeJeunesApp').service('videoService', ['$http', '$q', function($http, $q) {
+
+    this.getVideos = function(){
+        var def = $q.defer();
+
+        $http.get('http://campjeunesseicc.apispark.net/v1/videos/')
+            .success(
+                function(data) {
+                    def.resolve(data);
+                }
+            )
+            .error(
+                function(error) {
+                    def.reject('Failed to get videos : ' + error);
                 }
             );
         return def.promise;
