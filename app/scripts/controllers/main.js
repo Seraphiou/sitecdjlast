@@ -2,7 +2,7 @@
 
 
 angular.module('leSiteDuCampDeJeunesApp')
-  .controller('MainCtrl', function ($scope, $location, $anchorScroll, $sce, inscriptionService, anchorSmoothScroll ) {
+  .controller('MainCtrl', function ($scope, $location, $anchorScroll, $sce, inscriptionService, anchorSmoothScroll, faqService ) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -61,6 +61,12 @@ angular.module('leSiteDuCampDeJeunesApp')
     		}
     	);
     };
+    faqService.getFaq().then(
+        function(faq){
+            $scope.faq=faq;
+        }, function(error){
+            console.log('An error occurred : '+error+'.');
+        });
   });
 angular.module('leSiteDuCampDeJeunesApp').service('inscriptionService', ['$http', '$q', function($http, $q) {
 
@@ -91,6 +97,26 @@ angular.module('leSiteDuCampDeJeunesApp').service('inscriptionService', ['$http'
 				function(error) {
 					def.reject('Failed to store : ' + error);
 				}
+            );
+        return def.promise;
+    };
+}]);
+
+angular.module('leSiteDuCampDeJeunesApp').service('faqService', ['$http', '$q', function($http, $q) {
+
+    this.getFaq = function(){
+        var def = $q.defer();
+
+        $http.get('http://campjeunesseicc.apispark.net/v1/faqCats/')
+            .success(
+                function(data) {
+                    def.resolve(data);
+                }
+            )
+            .error(
+                function(error) {
+                    def.reject('Failed to store : ' + error);
+                }
             );
         return def.promise;
     };

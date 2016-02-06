@@ -398,7 +398,6 @@ module.exports = function (grunt) {
       'wiredep',
       'concurrent:server',
       'autoprefixer',
-      'php:dist',
       'connect:livereload',
       'watch'
     ]);

@@ -183,7 +183,7 @@
     <section id="faq">
       <div class="page-section">
         <h3 class="section-title">FOIRE AUX QUESTIONS</h3> Voici quelques unes des questions fréquemment posées:
-        <p>
+        <p><!-- 
           <ul class="faq-item">
             <li class="faq-question">Est-ce que le camp est réservé aux membres de ICC ?</li>
             <li class="faq-answer">Le camp est ouvert également aux jeunes qui ne fréquentent pas un campus ICC.</li>
@@ -302,7 +302,20 @@
             <li class="faq-answer">
               Non mais on suppose que le menu est suffisamment garni pour satisfaire tout le monde.
             </li>
-          </ul>
+          </ul> -->
+          <div ng-repeat="faqcat in faq">
+            <ul ng-repeat="question in faqcat.items" class="faq-item">
+              <li class="faq-question">
+                {{question.question}}
+                <div ng-if="question.hasAMapOnscreen">
+                  {{question.link}}
+                <iframe ng-src="{{question.link}}" max-width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+              </li>
+              <li class="faq-answer">
+                {{question.ans}}
+              </li>
+            </ul>
+          </div>
         </p>
       </div>
     </section>
